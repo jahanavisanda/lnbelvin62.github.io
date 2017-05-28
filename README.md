@@ -1,3 +1,14 @@
+# PlotlyRmdPage
+## Coursera Developing Data Products class
+Week 3 Assignment - Web Page Using R Markdown and Plotly
+
+## Description
+The web page produced from the Plotly R Markdown file in this repository shows the location of all of the volcanoes from the cited data set that are located in the North / East semihemisphere - that is, located in both the Northern Hemisphere and the Eastern Hemisphere.  See the plot for a linke to the data source.
+The name and the status of each volcano is shown when you hover over it.
+
+### Notes
+I had to display the entire world map in order to show all of these volcanoes, as the other choices limit you to specific continents, and these volcanoes are in both Europe and Africa (with a few in the Artic).
+
 # LeafletRmdPage
 ## Coursera Developing Data Products class
 Week 2 Assignment - Web Page Using R Markdown and Leaflet
