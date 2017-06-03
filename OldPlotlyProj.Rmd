@@ -1,25 +1,12 @@
 ---
-title: "Volcanoes in the North / East Semihemisphere"
-author: "Larry Belvin"
-date: "6/3/2017"
-output: ioslides_presentation
----
-
-## Developing Data Products Week 3 Assignment
-- R Markdown Presentation with Plotly Plot
-- Volcanoes in the North / East Semihemisphere
-
-## Volcanoes in the North / East Semihemisphere
-- Notes
-1. The data for the Plotly interactive plot on the following slide is from the following dataset located on Github:
-   https://github.com/plotly/datasets/blob/master/volcano_db.csv
-2. I was not able to successfully plot all of the volcanoes in the world, so I limited the plot to those in the North / East Semihemisphere (that is, those in both the Northern Hemisphere and the Eastern Hemisphere).
-3. When you hover over each location, you will see the volcano's name as well as its coordinates and its status.
-
+title: "May 28, 2017 - Volcanoes in the North / East semihemisphere"
+autho: "Larry Belvin"
+date: "5/28/2017"
+output: html_document
 ---
 
 ```{r, echo=FALSE, message=FALSE}
-# Volcanoes in the North / East Semihemisphere.
+# Volcanoes in the North / East semihemisphere.
 
 library(ggplot2)
 library(plotly)
@@ -63,11 +50,9 @@ world_plot <- plot_geo(volcanoes_subset2) %>%
         type='scattergeo'
     ) %>%
     layout(
-        title='Volcanoes in the N / E Semihemi<br>Source:<a href="https://github.com/plotly/datasets/blob/master/volcano_db.csv">Github Volcano Dataset</a>',
+        title='Volcanoes in the North / East Semihemisphere<br>Source:<a href="https://github.com/plotly/datasets/blob/master/volcano_db.csv">Github Volcano Dataset</a>',
         geo=world_map
     )
 
 world_plot
 ```
-
-# The End
